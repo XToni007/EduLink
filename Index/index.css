@@ -1,10 +1,13 @@
 body{
     font-family:Podkova;
-    background-color: #7aa7fb;
+    background-image: url(/assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header{
-    background-color:#000028;
+    background-color:black;
+    opacity: 0.85;
     position:fixed;
     top: 0;
     left:0;
@@ -79,7 +82,8 @@ header .navbar:hover{
     }
     
     footer{
-        background-color:#000028;
+        background-color:black;
+        opacity: 0.85;
         margin-top: 0;
         padding-left: 35px;
         position:fixed;
@@ -141,9 +145,11 @@ body .question{
 }
 
 footer{
-    background-color:#000028;
-    margin-top: 0;
+    background-color:black;
+    opacity: 0.85;
+    margin-top: 9%;
     padding-left: 35%;
+    height: 120px;
     position: fixed;
     margin-bottom: 0 auto;
     left:0;
@@ -152,11 +158,20 @@ footer{
     font-family:Podkova;
 }
 
+footer p{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    padding-left: 13%;
+}
+
 footer img{
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 3.5%;
+    padding-right: 30px;
+    padding-left: 5px;
     width: 50px;
     height:50px;
-    margin-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
