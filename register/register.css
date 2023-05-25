@@ -1,0 +1,175 @@
+header{
+  background-color:#000028;
+  position:fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  right: 0;
+  font-family:Podkova;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+header img{
+  padding-left: 20px;
+  width:50px;
+  height:50px;
+  margin-top: 10px;
+  bottom: 0px;
+}
+
+header .Logo{
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: inline;
+  position: relative;
+  left: 60%;
+  bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header p{
+  color: white;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: inline;
+  position: relative;
+  left: 60%;
+  bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header .navbar:hover{
+  font-size: 20px;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media only screen and (max-width: 800px){
+  header p{
+    display: none;
+  }
+
+  header .Logo{
+    margin-left: 10%;
+  }
+
+  .hamburger{
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+    margin-top: 70px;
+    margin-left: 0%;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+
+
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  background-image: url(../assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  max-width: 300px;
+  padding: 20px;
+  margin-top: 150px;
+}
+  
+h1 {
+  text-align: center;
+}
+  
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px;
+  width: 93%;
+}
+  
+body .submit{
+  background-color: #000028;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+  
+body .submit:hover {
+  background-color: #000028;
+}  
+
+body .question{
+  width: 50px;
+  height:50px;
+  bottom: 10px;
+  margin-top: 8%;
+  padding-left: 90%;
+}
+
+footer{
+  background-color:#000028;
+  padding-left: 35%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family:Podkova;
+  height: 15%;
+}
+
+footer img{
+  display: inline-block;
+  margin-left: 5%;
+  width: 50px;
+  height:50px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+} 
+
+.accreg{
+  font-size: 20px;
+}
+
+footer p{
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+  padding-left: 13%;
+}
