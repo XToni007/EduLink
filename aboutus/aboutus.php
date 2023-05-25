@@ -84,7 +84,7 @@
               </div>
             </div>
             <div class="infos">
-              <span class="name">Bryan Rafferty Basanda</span>
+              <span class="name">Bryan Rafferty</span>
               <span class="lorem">Developer</span>
             </div>
             <a href="/contact" class="btn-contact">CONTACT</a>
