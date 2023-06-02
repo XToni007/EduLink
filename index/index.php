@@ -1,65 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
-    <title>Drop-down Profile Menu</title>
-    <link rel="stylesheet" href="index2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLink</title>
+    <link rel="stylesheet" href="./index2.css">
 </head>
 <body>
     <header>
-        <img src="../logo/logo.png" class="logo"> 
-        <p class="Logo" style="left: 10px; bottom: 8px; font-size: 40px;"><a href="index.php">EduLink</a></p>
-        <p class="navbar"><a href="../notes/notes.php">Notes</a></p> 
-        <p style="font-size: 40px; bottom: 18px;">|</p> 
-        <p class="navbar"><a href="../forum/forums.php">Forums</a></p> 
-        <p style="font-size: 40px; bottom: 18px;">|</p> 
-        <p class="navbar"><a href="../vbl/VBL.php">VBL</a></p>
-        <p style="font-size: 40px; bottom: 18px;">|</p> 
-            <img src="../assets/antonio.jpg" class="user-pic" onclick="toggleMenu()">
-            <div class="sub-menu-wrap" id="subMenu">
-            <div class="sub-menu">
-                    <div class="user-info">
-                        <img src="../assets/antonio.jpg">
-                        <h3>Antonio Fandako</h3>
-                    </div>
-                    <hr>
-                    <a href="#" class="sub-menu-link">
-                        <img src="../assets/profile.png">
-                        <h3>Edit Profile</h3>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <img src="../assets/setting.png">
-                        <h3>setting account</h3>
-                        <span>></span>
-                    </a>
-                    <a href="#" class="sub-menu-link">
-                        <img src="../assets/logout.png">
-                        <h3>Log Out</h3>
-                        <span>></span>
-                    </a>
-                </div>
-            </div>
+    <h1>EduLink</h1>
+    <div class="navigation">
+    <p><a href="../aboutus/"><strong>Our People</strong></a></p>
+    <p><a href="../login/login.php"><strong>Login</strong></a></p>
+    </div>
     </header>
-    <h1>Welcome to Our <br>Website</h1>
-    <h2>Enjoy Learning</h2>
-    <hr width="40%">
-    <button type="button"><a href="../register/register.php">Join Us !</a></button>
+
+    <div class="container_1">
+        <div class="headline">
+            <img src="../logo/logo.png">
+            <br><br><h1>Welcome to Our <br>Website</h1>
+        </div>
+
+        <div class="quotes">
+            <p>Learning is the only thing the mind never exhausts, never fear, and never regrets.</p>
+           <hr>
+            <p>- Leonardo da Vinci</p>
+        </div>
+        <button class="btn" type="button">Join Us</button>
+    </div>
+
+    
+    
+    <div class="container_2">
+        <div class="headline">
+            <h1>Our Feature</h1>
+        </div>
+
+        <div class="feature">
+           <div class="VBL">
+           <div class="VBL_img">
+                <img src="../assets/VBL.png">
+            </div>
+
+            <div class="VBL_desc">
+                <p>VBL atau Video Based Learning adalah sebuah fitur yang dimana dapat mangakses atau mengupload video yang bertemakan edukasi dari user dan berfungsi untuk meningkatkan pemahaman user - user lainnya dalam mempelajari suatu topik.</p> <br>
+            </div>
+           </div>
+
+            <div class="Notes">
+            <div class="Notes_desc">
+                <p>Notes meruapakan sebuah fitur yang dapat membantu Anda untuk menulis materi yang sedang atau sudah dipelajari</p> <br>
+            </div>
+
+            <div class="Notes_img">
+                <img src="../assets/Note.png">
+            </div>
+            </div>
+
+            <div class="Forum">
+            <div class="Forum_img">
+                <img src="../assets/Forum.png">
+            </div>
+
+            <div class="Forum_desc">
+                <p>Fitur ini berfungsi sebagai platform  yang memungkinkan pengguna untuk berinteraksi, berdiskusi, dan mencari informasi terkait topik yang Anda minati.</p> <br>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container_3">
+        <h1>About Us</h1>
+        <h2>This web is not about time management, but all about money</h2>
+        <h3><li>Andy Sulasman</li></h3>
+    </div>
 
     <footer>
-        <img src="../assets/instagram.png">
-        <img src="../assets\facebook.png">
-        <img src="../assets\twitter.png">
+        <div class="info">
+            <div class="product">
+                <div class="logo">
+                    <img src="../logo/logo_black.png">
+                </div>
+                <div class="brand">
+                    <h2>EduLink</h2>
+                </div>
+            </div>
+             
+            <p>Copyright © 2021 EduLink. All rights reserved.</p>
+        </div>
+        
+        <div class="sosmed">
+           <h1>Find Us:</h1>
+           <img src="../assets/facebook.png">
+           <img src="../assets/instagram.png">
+           <img src="../assets/twitter.png">
+        </div>
     </footer>
-    
-    <script>
-        let subMenu = document.getElementById("subMenu");
-
-        function toggleMenu(){
-            subMenu.classList.toggle("open-menu");
-        }
-
-    </script>
-
+   
 </body>
 </html>
