@@ -27,7 +27,7 @@
            <hr>
             <p>- Leonardo da Vinci</p>
         </div>
-        <button class="btn" type="button">Join Us</button>
+        <button class="btn" type="button"><a href="../register/register.php">Join Us</a></button>
     </div>
 
     
@@ -73,7 +73,7 @@
 
     <div class="container_3">
         <h1>About Us</h1>
-        <h2>This web is not about time management, but all about money</h2>
+        <p>Welcome to Edulink, the innovative educational platform that aims to revolutionize learning. With our advanced features, including note-taking capabilities, interactive forums, and video-based learning, we provide a comprehensive and engaging learning experience for students. Take organized digital notes, collaborate with peers in dynamic discussions, and access educational videos created by experts. Our vision is to empower learners worldwide through accessible and enjoyable education. Feel free to contact us for any inquiries or support. Join Edulink and unlock your full learning potential.</p>
         <h3><li>Andy Sulasman</li></h3>
     </div>
 
@@ -93,9 +93,9 @@
         
         <div class="sosmed">
            <h1>Find Us:</h1>
-           <img src="../assets/facebook.png">
-           <img src="../assets/instagram.png">
-           <img src="../assets/twitter.png">
+           <a href="#"><img src="../assets/facebook.png"></a>
+           <a href="#"><img src="../assets/instagram.png"></a>
+           <a href="#"><img src="../assets/twitter.png"></a>
         </div>
     </footer>
    
