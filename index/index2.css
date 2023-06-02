@@ -1,189 +1,222 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url(../assets/background.png);
-    height: 100%;
-    padding-top: 70px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px;
+}
+
+header h1{
+  margin: 0;
+  color: white;
+}
+
+header .navigation p{
+  margin: 0;
+  display: inline-block;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+header .navigation p a{
+  text-decoration: none;
+  color: white;
+}
+header .navigation p a:hover{
+  color: #ff8906;
+}
+
+
+body{
+  background-color: #0F0E17;
+}
+
+.container_1{
+  text-align: center;
   
-  header{
-    background-color:#000028;
-    position:fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    right: 0;
-    font-family:Podkova;
-  }
+}
+
+.container_1 .headline{
+  margin-top: 20px;
   
-  header img{
-    padding-left: 20px;
-    width: 50px; 
-    height: 50px;
-    margin-top: 10px;
-    bottom: 0px;
-  }
-
-  header p{
-    color: white;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: inline;
-    position: relative;
-    left: 53%;
-    bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  header a{
-    text-decoration: none;
-    color: white;
-  }
-
-  header .navbar:hover{
-    font-size: 20px;
-  }
-
-.logo{
-    width: 50px;
 }
 
-.user-pic{
-    width: 50px;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-left: 52%;
+.container_1 .headline img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
 }
 
-.sub-menu-wrap{
-    position: absolute;
-    top: 100%;
-    left: 75%;
-    width: 25%;
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s;
+.container_1 .headline h1{
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 100px;
 }
 
-.sub-menu-wrap.open-menu{
-    max-height: 400px;
+.container_1 .quotes{
+  align-items: center;
 }
 
-.sub-menu{
-    background: white;
-    padding: 30px;
-    margin: 10px;
+.container_1 .quotes p{
+  color: #A7A9BE;
+  font-size: 20px;
 }
 
-.user-info{
-    display: flex;
-    align-items: center;
+.container_1 .quotes hr{
+  width: 50%;
 }
 
-.user-info h3{
-    font-weight: 500;
+.container_1 .btn{
+  text-align: center;
+  color: #fffffe;
+  text-decoration: none;
+  background-color: #ff8906;
+  font-size: 20px;
 }
 
-.user-info img{
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
+.container_2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+  max-width: 100%;
+  background-color: white;
 }
 
-.sub-menu hr{
-  border: 0;
-  height: 1px;
-  width: 100%;
-  background: #ccc;
-  margin: 14px 0 10px;
+.container_2 .headline{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px
 }
 
-
-.sub-menu-link{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    margin: 12px 0;
+.container_2 .headline h1{
+  font-size: 60px;
 }
 
-.sub-menu-link p{
-    width: 100%;
-    color: #000028;
-    margin-left: 10%;
+.container_2 .feature .VBL{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  align-items: center;
 }
 
-.sub-menu-link img{
-    width: 50px;
-    background: #e5e5e5;
-    border-radius: 50%;
-    padding: 1%;
-    margin-right: 15px;
+.container_2 .feature .VBL .VBL_img img{
+  width: 300px;
+  height: 300px auto;
 }
 
-.sub-menu-link span{
-  font-size: 22px;
-  transition: transform 0.5s;
-  margin-left: 25px;
+.container_2 .feature .VBL .VBL_desc p{
+  text-align: justify;
+  padding: 60px;
+  border-color: black;
+  padding-left: 10px;
 }
 
-.sub-menu-link:hover span{
-  transform: translateX(5px);
+.container_2 .feature .Notes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  align-items: center;
+}
+.container_2 .feature .Notes .Notes_img img{
+  width: 300px;
+  height: 300px auto;
 }
 
-.sub-menu-link:hover p{
-  font-weight: 600;
+.container_2 .feature .Notes .Notes_desc p{
+  text-align: justify;
+  padding: 60px;
+  border-color: black;
+  padding-right: 10px;
+}
+
+.container_2 .feature .Forum{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  align-items: center;
+}
+
+.container_2 .feature .Forum .Forum_img img{
+  width: 300px;
+  height: 200px;
+}
+
+.container_2 .feature .Forum .Forum_desc p{
+  text-align: justify;
+  padding: 60px;
+  border-color: black;
+  padding-left: 10px;
+}
+
+.container_3{
+  text-align: center;
+}
+
+.container_3 h1{
+  color: white;
+  font-size: 60px;
+}
+
+.container_3 h2{
+  padding-top: 10%;
+  color: white;
+}
+
+.container_3 h3 li{
+  padding-left: 55%;
+  color: white;
+  margin-bottom: 20%;
 }
 
 footer{
-    background-color:#000028;
-    padding-left: 35%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-family:Podkova;
-  }
-
-  footer img{
-    display: inline-block;
-    margin-left: 5%;
-    width: 50px;
-    height:50px;
-    margin-top: 10px;
-    padding-bottom: 10px;
-  }
-
-h1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
   text-align: center;
-  padding-top: 5%;
-  font-size: 90px;
-  margin-bottom: 0;
+  margin-top: 10%;
+  max-width: 100%;
+  background-color: white;
 }
 
-h2{
-    text-align: center;
+footer .info .product{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+  max-width: 100%;
 }
 
-button{
-    display: block;
-    margin: 0 auto;
-    background-color: #000028;
-    color: white;
+footer .info .product .logo img{
+  width: 50px;
+  height: 50px;
+  padding-left: 60%;
 }
 
-button{
-    display: block;
-    margin: 0 auto;
-    background-color: #000028;
-    color: white;
+footer .info .product .brand h2{
+  color: black;
+  padding-right: 100%;
 }
 
-button a{
-    text-decoration: none;
-    color: white;
+footer .info p{
+  color: black;
+}
+
+footer .sosmed img{
+  text-align: center;
+  display:list-item;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin-left: 46%;
 }
