@@ -11,7 +11,7 @@
     <header>
     <h1>EduLink</h1>
     <div class="navigation">
-    <p><a href="../aboutus/"><strong>Our People</strong></a></p>
+    <p><a href="../aboutus/aboutus.php"><strong>Our People</strong></a></p>
     <p><a href="../login/login.php"><strong>Login</strong></a></p>
     </div>
     </header>
