@@ -2,7 +2,7 @@
 
 class Connection
 {
-    public PDO $pdo;
+    public $pdo = null;
 
     public function __construct()
     {
@@ -40,6 +40,13 @@ class Connection
         $statement->bindValue('id', $id);
         $statement->bindValue('title', $note['title']);
         $statement->bindValue('description', $note['description']);
+        return $statement->execute();
+    }
+
+    public function removeNote($id)
+    {
+        $statement = $this->pdo->prepare("DELETE FROM notes WHERE id = :id");
+        $statement->bindValue('id', $id);
         return $statement->execute();
     }
 }
