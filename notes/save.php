@@ -1,7 +1,7 @@
 <?php
 
 
-$connection = require_once './Connection.php';
+$connection = require_once 'pdo.php';
 // echo '<pre>';
 // var_dump($_POST);
 // echo '</pre>';

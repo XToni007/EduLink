@@ -1,9 +1,6 @@
 * {
     box-sizing: border-box;
 }
-body {
-    font-family: Arial;
-}
 
 .new-note{
     width: 300px;
@@ -13,19 +10,35 @@ body {
 .new-note input,
 .new-note textarea,
 .new-note button{
-    font-family: Arial;
+    /* font-family: Arial; */
     padding: 5px 10px;
     display: block;
     width: 100%;
     margin-bottom: 15px;
 }
+
+.note-description{
+    width: 100%;
+    height: 200px;
+    vertical-align: top;
+    text-align: left;
+}
+
+::placeholder{
+    color: #a7a9be;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
 .notes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .note {
-    background-color: #ffda00;
+    background-color: #fffffe;
     color: black;
     width: 300px;
     display: inline-block;
@@ -57,3 +70,267 @@ body {
     text-align: right;
     font-style: italic;
 }
+
+.create {
+    display: flex;
+    align-items: center;
+    background: #ff8906;
+    color: #fffffe;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 20px 0 20px;
+    cursor: pointer;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+   
+   header h1{
+     margin: 0;
+     color: white;
+   }
+   
+   header .navigation p{
+     margin: 0;
+     display: inline-block;
+     align-items: center;
+     padding: 10px;
+     color: white;
+   }
+   
+   header .navigation p a{
+     text-decoration: none;
+     color: white;
+   }
+   header .navigation p a:hover{
+     color: #ff8906;
+   }
+   
+   
+   body{
+     background-color: #0F0E17;
+     margin: 0;
+     padding: 0;
+   }
+   
+   .container_1{
+     text-align: center;
+     
+   }
+   
+   .container_1 .headline{
+     margin-top: 20px;
+     
+   }
+   
+   .container_1 .headline img{
+     width: 150px;
+     height: 150px;
+     display: block;
+     margin: 0 auto;
+   }
+   
+   .container_1 .headline h1{
+     color: white;
+     margin-top: 10px;
+     text-align: center;
+     font-size: 100px;
+   }
+   
+   .container_1 .quotes{
+     align-items: center;
+   }
+   
+   .container_1 .quotes p{
+     color: #A7A9BE;
+     font-size: 20px;
+   }
+   
+   .container_1 .quotes hr{
+     width: 50%;
+   }
+   
+   .container_1 .btn{
+     text-align: center;
+     color: #fffffe;
+     text-decoration: none;
+     background-color: #ff8906;
+     font-size: 20px;
+   }
+   
+   .container_1 .btn a{
+     text-decoration: none;
+     color: #0F0E17;
+   }
+   
+   .container_1 .btn a:hover{
+     font-size: 21px;
+   }
+   
+   .container_2{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     flex-direction: column;
+     text-align: center;
+     margin-top: 10%;
+     background-color: white;
+     width: 100%;
+   }
+   
+   .container_2 .headline{
+     margin-top: auto;
+     margin-bottom: auto;
+     padding: 20px
+   }
+   
+   .container_2 .headline h1{
+     font-size: 60px;
+   }
+   
+   .container_2 .feature .VBL{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+   }
+   
+   .container_2 .feature .VBL .VBL_img img{
+     width: 300px;
+     height: 300px auto;
+   }
+   
+   .container_2 .feature .VBL .VBL_desc p{
+     text-align: justify;
+     padding: 60px;
+     padding-left: 10px;
+   }
+   
+   .container_2 .feature .Notes{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+   }
+   .container_2 .feature .Notes .Notes_img img{
+     width: 300px;
+     height: 300px auto;
+   }
+   
+   .container_2 .feature .Notes .Notes_desc p{
+     text-align: justify;
+     padding: 60px;
+     padding-right: 10px;
+   }
+   
+   .container_2 .feature .Forum{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+   }
+   
+   .container_2 .feature .Forum .Forum_img img{
+     width: 300px;
+     height: 200px;
+   }
+   
+   .container_2 .feature .Forum .Forum_desc p{
+     text-align: justify;
+     padding: 60px;
+     padding-left: 10px;
+   }
+   
+   @media only screen and (max-width: 600px) {
+   
+     .container_2{
+     display: flex;
+     text-align: center;
+     margin-top: 10%;
+     width: 100%;
+     background-color: white;
+     }
+   
+     footer .sosmed h1{
+       padding-left: 30px;
+     }
+   
+   }
+   
+   .container_3{
+     text-align: center;
+   }
+   
+   .container_3 h1{
+     color: white;
+     font-size: 60px;
+   }
+   
+   .container_3 p{
+     padding-top: 5%;
+     color: white;
+     text-align: justify;
+     margin-left: 20%;
+     margin-right: 20%;
+     text-decoration: none;
+   }
+   
+   .container_3 h3 li{
+     padding-left: 55%;
+     color: white;
+     margin-bottom: 10%;
+   }
+   
+   footer{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     flex-direction: column;
+     text-align: center;
+     margin-top: 12.1%;
+     width: 100%;
+     background-color: white;
+   }
+   
+   footer .info .product{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     flex-direction: column;
+     text-align: center;
+     margin-top: 10%;
+   }
+   
+   footer .info .product .logo img{
+     width: 50px;
+     height: 50px;
+     margin-left: 80%;
+     margin-top: 0.5%;
+     /* padding-left: 80%; */
+   }
+   
+   footer .info .product .brand h2{
+     color: black;
+     padding-right: 100%;
+   }
+   
+   footer .info p{
+     color: black;
+   }
+   
+   footer .sosmed img{
+     text-align: center;
+     display:list-item;
+     width: 50px;
+     height: 50px;
+     padding: 5px;
+     margin-left: 46%;
+   }
